@@ -1,0 +1,150 @@
+
+body {
+    font-family: 'Georgia', serif; 
+    background-color: #fafafa; 
+    color: #4a4a4a; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+header {
+    background-image: url('imagenes/libros.jpg'); 
+    background-size: cover;
+    color: #ffffff; 
+    padding: 30px 10px; 
+    text-align: center;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.portada {
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 2rem;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+nav {
+    background-color: #e1bee7; 
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button {
+    background-color: #9575cd; 
+    color: #ffffff; 
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 25px; 
+    font-size: 1.8rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #7e57c2; 
+}
+
+main {
+    padding: 20px;
+}
+
+#libros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.libro {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.libro:hover {
+    transform: translateY(-5px); 
+}
+
+.libro h2 {
+    color: #7e57c2; 
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.libro p {
+    color: #555;
+    font-size: 1.8rem;
+}
+
+.libro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+#sobre-mi {
+    background-color: #f3e5f5; 
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#sobre-mi h2 {
+    color: #7e57c2; 
+    margin-top: 0;
+    font-size: 2.3rem;
+}
+
+#sobre-mi p {
+    color: #555;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #d1c4e9; 
+    color: #4a148c; 
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+
+footer a {
+    color: #4a148c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
